@@ -9,7 +9,7 @@ Bu proje Vatansoft adına stajyerlik pozisyonu başvurusu için yapılmıştır.
 "name": Öğrenci Adı
 "surname" : Öğrenci Soyadı 
 
-![](https://www.hizliresim.com/nz30mjd)
+![](https://i.hizliresim.com/nz30mjd)
 
 # Öğrenci Güncelleme
 
