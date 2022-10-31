@@ -24,6 +24,8 @@ func main() {
 	e.GET("/getPlans", controllers.GetPlans)
 	e.GET("/getPlansWeekly", controllers.GetPlansWeekly)
 	e.GET("/getPlansMonthly", controllers.GetPlansMonthly)
+	e.POST("/getStudentById", controllers.GetStudentById)
+	e.POST("/getPlanById", controllers.GetPlanById)
 	e.POST("/createStudent", controllers.CreateStudent)
 	e.POST("/updateStudent", controllers.UpdateStudent)
 	e.POST("/deleteStudent", controllers.DeleteStudent)

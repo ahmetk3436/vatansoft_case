@@ -85,7 +85,15 @@ func CancelPlan(c echo.Context) error {
 	models.GetDB().Save(plan)
 	return c.JSON(http.StatusOK, plan)
 }
-
+func GetPlanById(c echo.Context) error {
+	id := c.QueryParam("id")
+	db := models.GetDB()
+	plan := &models.Plan{}
+	if err := db.Table("plans").Where("id = ?", id).Find(&plan).Error; err != nil {
+		return c.String(int(http.StateClosed), "Hata var bağlantı kapandı")
+	}
+	return c.JSON(http.StatusOK, plan)
+}
 func GetPlans(c echo.Context) error {
 	db := models.GetDB()
 	plans := []models.Plan{}

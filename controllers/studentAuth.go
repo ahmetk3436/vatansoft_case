@@ -46,6 +46,15 @@ func DeleteStudent(c echo.Context) error {
 	return c.String(http.StatusOK, "Öğrenci Başarıyla Silindi")
 
 }
+func GetStudentById(c echo.Context) error {
+	id := c.QueryParam("id")
+	db := models.GetDB()
+	student := &models.Student{}
+	if err := db.Table("students").Where("id = ?", id).Find(&student).Error; err != nil {
+		return c.String(int(http.StateClosed), "Hata var bağlantı kapandı")
+	}
+	return c.JSON(http.StatusOK, student)
+}
 func GetStudents(c echo.Context) error {
 	db := models.GetDB()
 	students := []models.Student{}
