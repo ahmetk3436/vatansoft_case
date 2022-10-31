@@ -32,7 +32,7 @@ Bu proje Vatansoft adına stajyerlik pozisyonu başvurusu için yapılmıştır.
 
 127.0.0.1:1323/getStudentById adlı adrese postman'da post isteği atıyoruz ve belirtilen ID değerindeki öğrenci geliyor : 
 
-![](https://www.hizliresim.com/rre308t)
+![](https://i.hizliresim.com/rre308t.png)
 
 # Bütün Öğrencileri Bulma
 
@@ -88,7 +88,7 @@ Bu proje Vatansoft adına stajyerlik pozisyonu başvurusu için yapılmıştır.
 
 127.0.0.1:1323/getPlanById adlı adrese postman'da post isteği atıyoruz ve belirtilen ID değerindeki plan geliyor : 
 
-![](https://www.hizliresim.com/q24rzhw)
+![](https://i.hizliresim.com/q24rzhw.png)
 
 # Bütün Planları Görüntülemek
 
